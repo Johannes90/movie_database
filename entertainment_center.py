@@ -1,6 +1,8 @@
 import media
 import fresh_tomatoes
 
+#Creating Movie Class Instances
+
 fight_club = media.Movie("Fight Club",
                          "Fight Club is a 1999 American film based on the 1996 novel of the same name by Chuck Palahniuk. The film was directed by David Fincher, and stars Brad Pitt, Edward Norton and Helena Bonham Carter.",
                          "http://vignette1.wikia.nocookie.net/fightclub/images/6/6a/Fight-club-dvd.jpg/revision/latest?cb=20081116042426",
@@ -16,7 +18,9 @@ james_bond = media.Movie("James Bond: Spectre",
                          "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM2Nzg4MzkwOF5BMl5BanBnXkFtZTgwNzA0OTE3NjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg",
                          "https://www.youtube.com/watch?v=LTDaET-JweU")
 
+#Creating list from previous movies.
 
 movies = [fight_club, ten_days, james_bond]
 
+#Calling the fresh_tomatoes script with the created movie list.
 fresh_tomatoes.open_movies_page(movies)
